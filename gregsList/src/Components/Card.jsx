@@ -1,29 +1,29 @@
 import React from "react";
-// import "../CSS/Card.css";
+import "../CSS/Card.css";
 // import Rating from "@material-ui/lab/Rating";
 import { useStateValue } from "../StateProvider.jsx";
 function Card({ id, image, title, price, rating }) {
-  const [{ basket }, dispatch] = useStateValue();
-  console.log("basket >>>>", basket);
-  const addToBasket = (e) => {
-    e.preventDefault();
+  // const [{ basket }, dispatch] = useStateValue();
+  // console.log("basket >>>>", basket);
+  // const addToBasket = (e) => {
+  //   e.preventDefault();
 
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        id,
-        title,
-        price,
-        image,
-        rating,
-      },
-    });
-  };
+  //   dispatch({
+  //     type: "ADD_TO_BASKET",
+  //     item: {
+  //       id,
+  //       title,
+  //       price,
+  //       image,
+  //       rating,
+  //     },
+  //   });
+  // };
 
   return (
     <div className="Card--container">
       <div className="Card--image">
-        <img src={image} alt="" />
+        <img src={image} alt="item image here" />
       </div>
       <div className="Card--description">
         <h5>{title}</h5>
@@ -35,7 +35,7 @@ function Card({ id, image, title, price, rating }) {
         /> */}
         <p>₹ {price}</p>
 
-        <button onClick={addToBasket}>Add to Cart</button>
+        {/* <button onClick={addToBasket}>Add to Cart</button> */}
       </div>
     </div>
   );

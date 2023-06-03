@@ -1,6 +1,6 @@
 import React from "react";
 import { useStateValue } from "../StateProvider.jsx";
-// import "../CSS/Checkout.css";
+import "../CSS/Checkout.css";
 import Navbar from "./Navbar.jsx";
 // import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../reducer.jsx";

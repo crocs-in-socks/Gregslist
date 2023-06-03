@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import CurrencyFormat from "react-currency-format";
-// import "../CSS/Payment.css";
+import "../CSS/Payment.css";
 import { getBasketTotal } from "../reducer.jsx";
 import { useStateValue } from "../StateProvider.jsx";
 import Address from "./Address.jsx";
