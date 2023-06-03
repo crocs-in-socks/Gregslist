@@ -85,7 +85,7 @@ const Cart = () => {
                           <span>Subtotal</span>
                           <span className='amount'>${cart.cartTotalAmount}</span>
                         </div>
-                        <p>Taxes and Shipping calculated at checkout</p>
+                        <p>Taxes calculated at checkout</p>
                         <button onClick={()=>setCheckedOut(true)}>check out</button>
                         <div className='continue-shopping'>
                         <Link to="/">
