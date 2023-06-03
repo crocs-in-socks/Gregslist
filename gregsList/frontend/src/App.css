@@ -28,7 +28,7 @@
 
 .nav-bar {
   height: 70px;
-  background: black;
+  background: #CE4257;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,7 +93,11 @@
   max-width: 100%;
   height: 400px;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
-    2px 2px 5px rgba(94, 104, 121, 0.3);
+    4px 4px 5px rgba(58, 58, 58, 0.3);
+  background-color: rgba(65, 65, 65, 0.12);
+  color: rgb(0, 0, 0);
+
+  border: solid #000000 1px;
 }
 
 .product h3 {
@@ -127,11 +131,13 @@
   margin-top: 2rem;
   font-weight: 400;
   letter-spacing: 1.15px;
-  background-color: #4b70e2;
-  color: #f9f9f9;
+  background-color: #262730;
+  color: #ffffff;
   border: none;
   outline: none;
   cursor: pointer;
+
+  z-index: 1;
 }
 
 /* Cart */
@@ -164,8 +170,15 @@
 }
 
 .cart-item {
-  border-top: 1px solid rgb(187, 187, 187);
-  padding: 1rem 0;
+  /* border-top: 1px solid rgb(187, 187, 187); */
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+    4px 4px 5px rgba(58, 58, 58, 0.3);
+  background-color: rgba(65, 65, 65, 0.12);
+  margin-bottom: 1rem;
+
+  color: #000000;
 }
 
 .cart-container .titles .product-title {
@@ -206,7 +219,7 @@
 
 .cart-item .cart-product-quantity {
   display: flex;
-  align-items: flex-start;
+  margin: auto;
   justify-content: center;
   width: 130px;
   max-width: 100%;
@@ -357,15 +370,72 @@
 }
 
 .App{
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url("https://thenextscoop.com/wp-content/uploads/2019/11/7-Smart-Ways-to-Market-Your-E-commerce-Business-on-a-Budget.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: slide 30s infinite;
+}
 
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+body {
+  /* margin-top: 13.5rem; */
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /* 
