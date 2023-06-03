@@ -34,7 +34,7 @@ function Login() {
   return (
     <div className="Login--container">
       <div className="Login--logo" onClick={() => navigate("/")}>
-        <img src="../src/Components/myimg.jpg" alt="" />
+        <img src="../src/Components/vshoplogo1.jpg" alt="" />
       </div>
 
       <div className="Login--form">

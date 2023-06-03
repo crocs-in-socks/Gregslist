@@ -21,7 +21,7 @@ function Navbar() {
     <div className="Navbar--container">
       <div className="Navbar--inner">
         <div className="Navbar--logo" onClick={() => navigate("/")}>
-          {/* <img src="..\src\Components\logoipsum-291(1).png" alt="image here" /> */}
+          { <img src="..\src\Components\vshoplogo1.png" alt="image here" /> }
         </div>
         <div className="Navbar--Searchbar">
           <input type="text" placeholder="Search..." />
