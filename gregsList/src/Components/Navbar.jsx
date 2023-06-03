@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import "../CSS/Navbar.css";
+import "../CSS/Navbar.css";
+import "./logo.png"
 import { useStateValue } from "../StateProvider.jsx";
 
 function Navbar() {
@@ -18,15 +19,14 @@ function Navbar() {
   // };
   return (
     <div className="Navbar--container">
-      <p>Navbar</p>
       <div className="Navbar--inner">
         <div className="Navbar--logo" onClick={() => navigate("/")}>
-          <img src="./amazon_logo1.png" alt="image here" />
+          {/* <img src="..\src\Components\logoipsum-291(1).png" alt="image here" /> */}
         </div>
         <div className="Navbar--Searchbar">
           <input type="text" placeholder="Search..." />
           <div className="Navbar--Searchicon" onClick={() => navigate("/addproduct")}>
-            <img src="./searchIcon.png" alt="image here" />
+            <img src="./searchIcon.png" alt="search button" />
           </div>
         </div>
         {/* <div className="Navbar--RightContainer">

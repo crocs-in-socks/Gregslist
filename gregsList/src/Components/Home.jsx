@@ -1,9 +1,10 @@
 import axios from "../axios.jsx";
 import React, { useEffect, useState } from "react";
-// import "../CSS/Home.css";
+import "../CSS/Home.css";
 import Card from "./Card.jsx";
 import { useStateValue } from "../StateProvider.jsx";
 import Navbar from "./Navbar.jsx";
+
 
 function Home() {
   // const [products, setProducts] = useState("");
@@ -20,15 +21,32 @@ function Home() {
 
   return (
     <div className="Home--container">
-      <h1>
-        Home Page
-      </h1>
       <Navbar />
       <div className="Home--Banner">
-        <img src="./banner.jpg" alt="" />
-        <img src="./mobile_banner.jpg" alt="" />
+        {/* <img src="./banner.jpg" alt="img not available" />
+        <img src="./mobile_banner.jpg" alt="img not available" /> */}
       </div>
 
+      <Card
+      _id="1"
+      price="69420"
+      title="Dumbells"
+      />
+      <Card
+      _id="1"
+      price="69420"
+      title="Books"
+      />
+      <Card
+      _id="1"
+      price="69420"
+      title="Bucket"
+      />
+      <Card
+      _id="1"
+      price="69420"
+      title="Mattress"
+      />
       {/* <div className="Home--main">
         {products &&
           products?.data.map((product) => (
