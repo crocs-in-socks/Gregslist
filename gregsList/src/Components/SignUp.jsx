@@ -53,7 +53,7 @@ function SignUp() {
           />
         </div>
 
-        <div className="SignUp--button" onClick={signup}>Create Account in Amazon</div>
+        <div className="SignUp--button" onClick={signup}>Create Account in V-Shop</div>
       </div>
 
       <div className="SignUp--button" onClick={() => navigate("/login")}>

@@ -32,3 +32,41 @@
     align-self: flex-start;
     margin-bottom: 10px;
 }
+.SignUp--input
+{
+    width: 100%;
+  padding: 10px;
+
+  
+
+  
+}
+.SignUp--input > p
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+.SignUp--input > input{
+    width: 95%;
+    height: 33px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-top: 5px;
+
+    &:hover {
+      border: 1px solid orange;
+    }
+}
+.SignUp--button
+{
+    width: 55%;
+  height: 35px;
+  background-color: #30332E;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  }
