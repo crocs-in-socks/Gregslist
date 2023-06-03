@@ -26,7 +26,7 @@ function Navbar() {
         <div className="Navbar--Searchbar">
           <input type="text" placeholder="Search..." />
           <div className="Navbar--Searchicon" onClick={() => navigate("/addproduct")}>
-            <img src="./searchIcon.png" alt="search button" />
+            <img src="..\src\Components\searchicon.png" alt="search button" />
           </div>
         </div>
         <div className="Navbar--RightContainer">

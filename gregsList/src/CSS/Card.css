@@ -2,9 +2,11 @@
     width: 100%;
     height: 100%;
 
+    background-color: #2D93AD;
+
     display: flex;
-    flex-direction: column;
-    background-color: #fff;
+    flex-direction: row;
+    /* background-color: #fff; */
     z-index: 10;
 }
 

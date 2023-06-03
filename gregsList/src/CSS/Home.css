@@ -1,12 +1,11 @@
 * {
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
 }
 
 .Home--container {
-    width: 100%;
-    background-color: rgb(234, 237, 237);
-    max-width: 1400px;
+    width: 100vw;
+    background-color: #2D93AD;
     margin: auto;
     height: fit-content;
 }
@@ -26,9 +25,4 @@
 
 .Home--Banner > img {
     width: 100%;
-    
-    
-        &:nth-child(2) {
-          display: none;
-        }
 }
