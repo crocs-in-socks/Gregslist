@@ -21,7 +21,7 @@ function SignUp() {
   return (
     <div className="SignUp--container">
       <div className="SignUp--logo" onClick={() => navigate("/")}>
-        <img src="./amazon_logo.png" alt="" />
+        {/* <img src="./amazon_logo.png" alt="" /> */}
       </div>
       <div className="SignUp--form">
         <h3>Sign-Up</h3>

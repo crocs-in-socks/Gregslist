@@ -29,21 +29,25 @@ function Home() {
 
       <Card
       _id="1"
+      image="..\src\Components\dumbell.jpeg"
       price="69420"
       title="Dumbells"
       />
       <Card
       _id="1"
+      image="..\src\Components\book.jpeg"
       price="69420"
       title="Books"
       />
       <Card
       _id="1"
+      image="..\src\Components\bucket.jpeg"
       price="69420"
       title="Bucket"
       />
       <Card
       _id="1"
+      image="..\src\Components\mattress.jpeg"
       price="69420"
       title="Mattress"
       />
