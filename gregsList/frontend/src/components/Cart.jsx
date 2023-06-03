@@ -1,8 +1,9 @@
 import {useSelector, useDispatch} from 'react-redux'
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import { Link } from 'react-router-dom'
 import { addToCart, decreaseCart, removeFromCart, clearCart, getTotal } from '../features/cartSlice'
 const Cart = () => {
+    const [checkedOut,setCheckedOut] = useState(false);
     const cart = useSelector((state) =>state.cart)
     const dispatch = useDispatch()
     useEffect(() =>{
@@ -25,6 +26,7 @@ const Cart = () => {
     <div className="cart-container">
       <h2>Wishlist</h2>
       {
+        !checkedOut?(
         cart.cartItems.length===0?
         (<div className='cart-empty'>
             <p>Your cart is currently empty</p>
@@ -84,9 +86,7 @@ const Cart = () => {
                           <span className='amount'>${cart.cartTotalAmount}</span>
                         </div>
                         <p>Taxes and Shipping calculated at checkout</p>
-                        <button>check out</button>
-
-                        
+                        <button onClick={()=>setCheckedOut(true)}>check out</button>
                         <div className='continue-shopping'>
                         <Link to="/">
                       <svg xmlns="http://www.w3.org/2000/svg" 
@@ -108,7 +108,7 @@ const Cart = () => {
 
             </div>
         </div>
-        )}
+        )):<h1 className='checkout-email'>Seller email : ash@vitstudent.ac.in</h1>}
     </div>
     )
 }

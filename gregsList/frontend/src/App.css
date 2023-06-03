@@ -363,6 +363,10 @@
   .cart-container .titles {
     display: none;
   }
+  .checkout-email
+  {
+    font-size: 16px;
+  }
 
   .cart-item,
   .cart-container .titles {
