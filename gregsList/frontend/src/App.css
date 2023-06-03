@@ -5,7 +5,6 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
-
 /* Not Found */
 .not-found {
   display: flex;
@@ -227,6 +226,7 @@
   border-radius: 5px;
 }
 
+
 .cart-item .cart-product-quantity button {
   border: none;
   outline: none;
@@ -437,7 +437,63 @@ body {
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
+.login-page
+{
+  
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-top: 2rem;
+  
+}
+.login-button
+{
+  width: 10rem;
+  height: 2rem;
+  margin: 2rem;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
 
+}
+.login-items
+{
+  margin: 0;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  position: relative;
+  align-items: center;
+  margin-top: 4rem;
+
+  
+}
+.login-item-things
+{
+  margin-bottom: 2rem;
+  padding: 5px;
+}
+
+.login-cover{
+  
+  background-color: black;
+  width: 25em;
+  height: 30rem;
+  position: relative;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+    4px 4px 5px rgba(58, 58, 58, 0.3);
+  background-color: rgba(65, 65, 65, 0.12);
+  color: rgb(0, 0, 0);
+
+
+}
 /* 
 https://thenextscoop.com/wp-content/uploads/2019/11/7-Smart-Ways-to-Market-Your-E-commerce-Business-on-a-Budget.png
 

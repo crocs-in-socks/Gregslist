@@ -9,6 +9,7 @@ import Cart from './components/Cart';
 import Home from './components/Home';
 import Sell from './components/Sell';
 import NotFound from './components/NotFound';
+import Loginform from './components/LoginForm';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/cart" exact element={<Cart />} />
+          <Route path='/login' exact element={<Loginform />}/>
           <Route path='/' exact element={<Home />} />
           <Route path='/sell' exact element={<Sell />} />
           <Route path="/not-found" element={<NotFound />} />
