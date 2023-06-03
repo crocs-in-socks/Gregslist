@@ -29,22 +29,20 @@ function Navbar() {
             <img src="./searchIcon.png" alt="search button" />
           </div>
         </div>
-        {/* <div className="Navbar--RightContainer">
+        <div className="Navbar--RightContainer">
           <div className="Navbar--Navbutton"
-            onClick={user ? () => signOut() : () => navigate("/login")}
+            onClick={()=>{navigate("/login")}}
           >
-            <p>Hello,</p>
-            <p>{user ? user?.fullName : "Guest"}</p>
+            Login
           </div> 
-          <div className="Navbar--Navbutton" onClick={() => navigate("/orders")}>
-            <p>Return</p>
-            <p>& Orders</p>
+          <div className="Navbar--Navbutton" onClick={()=>{navigate("/orders")}}>
+            <p>Return & Orders</p>
           </div>
-          <div className="Navbar--Basketbutton" onClick={() => navigate("/checkout")}>
+          {/* <div className="Navbar--Basketbutton" onClick={() => navigate("/checkout")}>
             <img src="./basket-icon.png" alt="" />
             <p>{basket?.length}</p>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
       </div>
     </div>
   );
