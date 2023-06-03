@@ -446,3 +446,76 @@ https://wallpaperaccess.com/full/2593105.jpg
 https://wallpaperaccess.com/full/2593043.jpg
 
 https://media.istockphoto.com/id/1340117122/photo/cube-with-shopping-trolley-symbol-on-the-laptop-keyboard.jpg?b=1&s=170667a&w=0&k=20&c=PU8iTTvTj6TV6_Quy9Z7KQJoOgY-rp_rqI9FbFNFYEw= */
+
+.Sell--container {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 30px;
+
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+    4px 4px 5px rgba(58, 58, 58, 0.3);
+  background-color: rgba(65, 65, 65, 0.12);
+  color: rgb(0, 0, 0);
+
+  border: solid #000000 1px;
+  border-radius: 5px;
+}
+
+.Sell--container .Sell--form{
+  width: 100%;
+}
+
+.Sell--container .Sell--form .Sell--inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.Sell--container .Sell--form .Sell--inputfield label{
+  width: 200px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.Sell--container .Sell--form .Sell--inputfield .input,
+.Sell--container .Sell--form .Sell--inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.Sell--container .Sell--form .Self--inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.Sell--container .Sell--form .Sell--inputfield p{
+  font-size: 14px;
+  color: #757575;
+}
+
+.btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  black;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Sell--container .Sell--form .Sell--inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.Sell--container .Sell--form .Sell--inputfield:last-child{
+  margin-bottom: 0;
+}

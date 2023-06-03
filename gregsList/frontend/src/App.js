@@ -7,6 +7,7 @@ import {ToastContainer} from 'react-toastify'
 import NavBar from './components/NavBar';
 import Cart from './components/Cart';
 import Home from './components/Home';
+import Sell from './components/Sell';
 import NotFound from './components/NotFound';
 
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/cart" exact element={<Cart />} />
           <Route path='/' exact element={<Home />} />
+          <Route path='/sell' exact element={<Sell />} />
           <Route path="/not-found" element={<NotFound />} />
           <Route path="/" element={<Navigate replace to="/not-found" />} />
         </Routes>
