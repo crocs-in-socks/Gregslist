@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Cart from './components/Cart';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
+import Loginform from './components/LoginForm';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/cart" exact element={<Cart />} />
+          <Route path='/login' exact element={<Loginform />}/>
           <Route path='/' exact element={<Home />} />
           <Route path="/not-found" element={<NotFound />} />
           <Route path="/" element={<Navigate replace to="/not-found" />} />
