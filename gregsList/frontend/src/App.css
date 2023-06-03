@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
 * {
   padding: 0;
+  
   margin: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
@@ -385,7 +386,7 @@
 .App{
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
@@ -432,6 +433,7 @@
 
 body {
   /* margin-top: 13.5rem; */
+  
   color: #999;
   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   text-align: center;
